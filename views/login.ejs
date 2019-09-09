@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Authenticate Application|| Thang Tran</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="/auth/home">Homepage</a>
+            </li>
+            <li><a href="/auth/login">Login</a></li>
+            <li><a href="/auth/logout">Logout</a></li>
+        </ul>
+    </nav>
+    <header>    
+        <h1> ThangTran</h1>
+        
+    </header>
+    <main>
+            <div class="container">
+                    <h2>Đăng nhập</h2>
+                    <form action="/auth/login" method="POST">
+                      <div class="form-group">
+                        <label for="email">Username</label>
+                        <input class="form-control" id="email" placeholder="Enter email" name="username">
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                  </div>
+    </main>
+    <main>
+        <p>
+             <a href="/auth/google" class="google-btn">Sign In Login Google+ </a>
+           
+        </p>
+        
+    </main>
+
+
+
+</body>
+</html>
